@@ -1,0 +1,78 @@
+.expense-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: rgba(76, 255, 255, 0.9); */
+  background-image: url('../images/back.jpg');
+  background-size: cover;
+  font-size: 100%;
+  border: 2px solid black;
+  width: 50%;
+  margin: 1rem auto 0.5rem auto;
+  justify-content: center;
+  text-align: center;
+  height: 5rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 12px;
+}
+
+.expense-item__date {
+  font-size: 80%;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 0;
+  margin: 0.2rem;
+  width: 20%;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 95%;
+  font-weight: bold;
+  color: white;
+}
+
+.expense-item__title {
+  display: inline-block;
+  border: 2px solid black;
+  margin: 0.2rem;
+  width: 50%;
+  text-align: left;
+  padding: 0.7rem 0.2rem;
+  max-width: 95%;
+  border-radius: 12px;
+  font-size: 120%;
+  font-weight: bold;
+  color: white;
+}
+
+.expense-item__amount {
+  display: inline-block;
+  border: 2px solid black;
+  margin: 0.2rem;
+  width: 20%;
+  padding: 0.7rem 0.2rem;
+  text-align: center;
+  max-width: 95%;
+  border-radius: 12px;
+  color: white;
+  font-size: 120%;
+}
+
+@media only screen and (max-width: 900px) {
+  .expense-item {
+    width: 80%;
+  }
+
+  .expense-item__date {
+    font-size: 75%;
+  }
+
+  .expense-item__title {
+    font-size: 90%;
+  }
+
+  .expense-item__amount {
+    font-size: 90%;
+  }
+}

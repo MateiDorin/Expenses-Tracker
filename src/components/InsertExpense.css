@@ -1,0 +1,123 @@
+.add-expense {
+    /* background-color: rgba(76, 255, 255, 0.9); */
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    border: 2px solid black;
+    width: 50%;
+    height: 16rem;
+    padding:1rem;
+    margin: 1rem auto 0.5rem auto;
+    color: black;
+    border-radius: 12px;
+}
+
+.expense-button {
+    display: block;
+    /* background-color: rgba(76, 255, 255, 0.9); */
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    border: 2px solid black;
+    width: 50%;
+    height: 8rem;
+    margin: 1rem auto 0.5rem auto;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+/* .add {
+    margin: auto;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content:left;
+}
+
+.block {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+.block label {
+    padding-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 120%;
+    color: white;
+}
+
+.expense-data {
+    border-radius: 6px;
+    width: 95%;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+    width:100%;
+    justify-content: right;
+}
+
+.btn1 {
+    background-color: rgba(200, 0, 255, 0.5);
+    border-radius: 12px;
+    border:2px solid black;
+    padding: 10px 10px;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    transition:all;
+    box-shadow: 3px 3px rgba(200, 0, 255, 0.5);
+}
+
+.btn1:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+
+
+/* @media only screen and (max-width: 650px) {
+    .add-expense {
+        width: 80%;
+        height: 18rem;
+    }
+    .block {
+        width: 80%;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+    
+} */
+
+@media only screen and (max-width: 900px) {
+    .add-expense {
+        width: 80%;
+        height: 19rem;
+    }
+    .expense-button {
+        width: 80%;
+        height: 8rem;
+    }
+    .block {
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .block label {
+        font-size: 110%;
+
+    }
+}
+    
