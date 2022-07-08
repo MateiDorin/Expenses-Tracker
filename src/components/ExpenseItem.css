@@ -2,8 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* background-color: rgba(76, 255, 255, 0.9); */
-  background-image: url('../images/back.jpg');
+  background-image: url("../images/back.jpg");
   background-size: cover;
   font-size: 100%;
   border: 2px solid black;
