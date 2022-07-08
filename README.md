@@ -1,6 +1,6 @@
 # Expenses-Tracker
+Working in progress.
 
-This is an Expenses Tracker.\n
 
-username: dorin\n
+username: dorin;
 password: 123
