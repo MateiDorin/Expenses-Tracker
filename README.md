@@ -1,4 +1,4 @@
 # Expenses-Tracker
 
-Working in progress...
-SignIn and SignOut
+This is an Expenses Tracker.
+Working in Progress...
