@@ -64,7 +64,7 @@
   }
 
   .expense-item__date {
-    font-size: 75%;
+    font-size: 65%;
   }
 
   .expense-item__title {
@@ -72,6 +72,6 @@
   }
 
   .expense-item__amount {
-    font-size: 90%;
+    font-size: 80%;
   }
 }

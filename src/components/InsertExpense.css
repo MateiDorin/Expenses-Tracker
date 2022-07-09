@@ -3,7 +3,7 @@
   background-size: cover;
   border: 2px solid black;
   width: 50%;
-  height: 16rem;
+  height: 19rem;
   padding: 1rem;
   margin: 1rem auto 0.5rem auto;
   color: black;
@@ -58,6 +58,7 @@
   padding: 1rem 0rem;
   width: 100%;
   justify-content: right;
+  margin-top: 2rem;
 }
 
 .btn1 {
@@ -83,7 +84,7 @@
 @media only screen and (max-width: 900px) {
   .add-expense {
     width: 80%;
-    height: 19rem;
+    height: 22rem;
   }
   .expense-button {
     width: 80%;
@@ -95,5 +96,22 @@
   }
   .block label {
     font-size: 110%;
+  }
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+  }
+  .btn1 {
+    width: 40%;
+    cursor: pointer;
+    transition: all;
+    font-size: 70%;
+  }
+  .btn1:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    cursor: pointer;
   }
 }

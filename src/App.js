@@ -3,6 +3,7 @@ import "./App.css";
 import InsertExpense from "./components/InsertExpense";
 import ExpenseItem from "./components/ExpenseItem";
 import SignIn from "./components/SignIn";
+import Card from "./UI/Card";
 
 const App = () => {
   const [validUser, setValidUser] = useState(false);
@@ -58,14 +59,14 @@ const App = () => {
         )}
       </div>
       {validUser && (
-        <div>
+        <Card>
           <div className="sign-out">
             <button onClick={stopProgram} className="out">Sign Out</button>
           </div>
           <p className="app-name">Expenses Tracker</p>
           <InsertExpense onSaveExpenseData={newExpense} />
           <ExpenseItem items={expenses} />
-        </div>
+        </Card>
       )}
     </div>
   );
