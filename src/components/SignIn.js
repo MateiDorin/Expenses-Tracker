@@ -5,29 +5,22 @@ const SignIn = (props) => {
   const [getUser, updatedUser] = useState("");
   const [getPassword, updatedPassword] = useState("");
 
-  const details = [{ username: "dorin", password: "123" }];
+  const details = [["dorin", "123"], ["ana", '1234']];
 
   const usernameHandler = (event) => {
     updatedUser(event.target.value);
   };
 
-  console.log(getUser);
-
   const passwordHandler = (event) => {
     updatedPassword(event.target.value);
   };
 
-  console.log(getPassword);
-
   const submitHandler = (event) => {
     event.preventDefault();
-    if (
-      getUser === details[0].username &&
-      getPassword === details[0].password
-    ) {
+
+    if (details.flat().includes(getUser) &&  details.flat()[details.flat().indexOf(getUser) + 1] === getPassword) {
       props.start();
     } else {
-      props.stop();
       alert("Wrong Username or Password");
       updatedPassword('');
       updatedUser('');
