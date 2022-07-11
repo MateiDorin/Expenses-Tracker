@@ -1,0 +1,67 @@
+/* .filter {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    border: 2px solid black;
+    width: 50%;
+    height: 4rem;
+    margin: 1rem auto 0.5rem auto;
+    color: black;
+    border-radius: 12px;
+    padding-top: 2.5rem;
+} */
+
+.expenses-filter {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    border: 2px solid black;
+    width: 50%;
+    height: 4rem;
+    margin: 1rem auto 0.5rem auto;
+    color: black;
+    border-radius: 12px;
+  }
+  
+  .expenses-filter__control {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .expenses-filter label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin: 1.5rem;
+    color: white;
+  }
+  
+  .expenses-filter select {
+    font: inherit;
+    font-weight: bold;
+    border-radius: 6px;
+    height: 2rem;
+    margin-right: 1.5rem;
+    padding: 0 1rem;
+  }
+
+@media only screen and (max-width: 900px) {
+    .expenses-filter {
+      width: 80%;
+      height: 4rem;
+      font-size: 80%;
+    }
+
+    .expenses-filter label {
+        margin: 1rem;
+      }
+      
+      .expenses-filter select {
+        margin-right: 1rem;
+      }
+
+}

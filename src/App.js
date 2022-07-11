@@ -3,6 +3,7 @@ import "./App.css";
 import InsertExpense from "./components/InsertExpense";
 import ExpenseItem from "./components/ExpenseItem";
 import SignIn from "./components/SignIn";
+import Filter from "./components/Filter";
 
 const App = () => {
   const [validUser, setValidUser] = useState(false);
@@ -64,6 +65,7 @@ const App = () => {
           </div>
           <p className="app-name">Expenses Tracker</p>
           <InsertExpense onSaveExpenseData={newExpense} />
+          <Filter />
           <ExpenseItem items={expenses} />
         </div>
       )}
