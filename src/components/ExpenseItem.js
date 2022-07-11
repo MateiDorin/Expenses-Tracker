@@ -1,7 +1,11 @@
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
-  const expenses = props.items.map((expense) => {
+  const filteredExpenses = props.items.filter((expense) => {
+    return expense.date.getFullYear().toString() === props.newYear;
+  });
+
+  const expenses = filteredExpenses.map((expense) => {
     return (
       <div key={expense.id} className="expense-item">
         <div className="expense-item__date">
