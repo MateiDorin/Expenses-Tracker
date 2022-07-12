@@ -48,7 +48,7 @@ const InsertExpense = (props) => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       {!isValid && (
         <div className="expense-button">
           <button onClick={startEditHandler} className="btn1">
@@ -95,7 +95,7 @@ const InsertExpense = (props) => {
           </div>
         </form>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 

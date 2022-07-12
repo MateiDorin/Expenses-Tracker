@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import "./SignIn.css";
 
@@ -28,7 +29,7 @@ const SignIn = (props) => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <div className="login-box">
         <div className="title">Sign in to Expenses Tracker</div>
         <form onSubmit={submitHandler}>
@@ -53,7 +54,7 @@ const SignIn = (props) => {
           </button>
         </form>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

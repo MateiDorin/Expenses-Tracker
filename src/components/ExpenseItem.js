@@ -1,3 +1,4 @@
+import React from "react";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
@@ -24,9 +25,9 @@ const ExpenseItem = (props) => {
   });
 
   return (
-    <div>
+    <React.Fragment>
       {expenses}
-    </div>
+    </React.Fragment>
   );
 };
 
