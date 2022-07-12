@@ -4,6 +4,7 @@ import InsertExpense from "./components/InsertExpense";
 import ExpenseItem from "./components/ExpenseItem";
 import SignIn from "./components/SignIn";
 import Filter from "./components/Filter";
+import Wrapper from "./components/Helpers/Wrapper";
 
 const DUMMY_EXPENSES = [
   {
@@ -58,14 +59,12 @@ const App = () => {
 
 
   return (
-    <div>
-      <div>
+    <Wrapper>
         {!validUser && (
           <div>
             <SignIn start={startProgram}/>
           </div>
         )}
-      </div>
       {validUser && (
         <div>
           <div className="sign-out">
@@ -77,7 +76,7 @@ const App = () => {
           <ExpenseItem items={expenses} newYear = {year} />
         </div>
       )}
-    </div>
+    </Wrapper>
   );
 };
 
