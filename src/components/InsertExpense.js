@@ -39,6 +39,14 @@ const InsertExpense = (props) => {
         date: new Date(enteredDate),
         id: Math.random().toString(),
       };
+      fetch('https://expenses-tracker-8297c-default-rtdb.europe-west1.firebasedatabase.app/expenses.json', {
+        method: 'POST',
+        body: JSON.stringify(expenseData),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+
       props.onSaveExpenseData(expenseData);
       setEnteredTitle("");
       setEnteredAmount("");
