@@ -6,6 +6,10 @@ const ExpenseItem = (props) => {
     return expense.date.getFullYear().toString() === props.newYear;
   });
 
+  const deleteUser = (id) => {
+    alert(id)
+  }
+
   const expenses = filteredExpenses.map((expense) => {
     return (
       <div key={expense.id} className="expense-item">
@@ -20,7 +24,7 @@ const ExpenseItem = (props) => {
         </div>
         <div className="expense-item__title">{expense.title}</div>
         <div className="expense-item__amount">£{expense.amount}</div>
-        <div><button>Delete</button></div>
+        <div><button onClick={() => deleteUser(expense.id)}>Delete</button></div>
       </div>
     );
   });

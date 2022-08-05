@@ -58,6 +58,9 @@
   font-size: 120%;
 }
 
+button {
+}
+
 @media only screen and (max-width: 900px) {
   .expense-item {
     width: 80%;
