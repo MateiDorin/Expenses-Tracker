@@ -7,7 +7,7 @@ import Filter from "./components/Filter";
 import Wrapper from "./components/Helpers/Wrapper";
 
 
-const DUMMY_EXPENSES = [];
+const API_DATA = [];
 
 async function fetchExpenses() {
   const response = await fetch(
@@ -15,7 +15,7 @@ async function fetchExpenses() {
   );
   const expenses1 = await response.json();
   Object.keys(expenses1).forEach((key) => {
-    return DUMMY_EXPENSES.unshift({
+    return API_DATA.unshift({
       id: expenses1[key].id,
       title: expenses1[key].title,
       amount: expenses1[key].amount,
@@ -29,7 +29,7 @@ fetchExpenses();
 
 const App = () => {
   const [validUser, setValidUser] = useState(false);
-  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+  const [expenses, setExpenses] = useState(API_DATA);
   const [year, setYear] = useState("2022");
 
   const newExpense = (newData) => {
