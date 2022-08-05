@@ -20,6 +20,7 @@ const ExpenseItem = (props) => {
         </div>
         <div className="expense-item__title">{expense.title}</div>
         <div className="expense-item__amount">£{expense.amount}</div>
+        <div><button>Delete</button></div>
       </div>
     );
   });
