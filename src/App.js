@@ -15,7 +15,7 @@ async function fetchExpenses() {
   );
   const expenses1 = await response.json();
   Object.keys(expenses1).forEach((key) => {
-    return DUMMY_EXPENSES.push({
+    return DUMMY_EXPENSES.unshift({
       id: expenses1[key].id,
       title: expenses1[key].title,
       amount: expenses1[key].amount,
